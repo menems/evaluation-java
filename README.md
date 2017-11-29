@@ -8,17 +8,17 @@ The goal is to search on the [ghibli public api](https://ghibliapi.herokuapp.com
 
 ### Retrieve movies
 
-You need to find gibli movies with a endpoints like `GET http://localhost:8080/movies?q=to`.
+You need to find ghibli movies with a endpoints like `GET http://localhost:8080/movies?q=to`.
 
 This endpoint is just a proxy on the public api.
 
 ### Add a movie to favorite
 
-You should save a movie as your favorites on a mysql database with `POST http://localhost:8080/favorite`.
+You should save a movie as your favorite on a mysql database with `POST http://localhost:8080/favorite`.
 
-The body of this request should contain *only* the id of the movies.
+The body of this request should contain *only* the id of the movie.
 
-Your favorites should contains thoses informations in database: `id, title, description, director , producer and release data, rt_score`
+Your favorites should contains thoses informations in database: `id, title, description, director , producer, release data and rt_score`
 
 ### List your favorites
 
@@ -26,7 +26,7 @@ You should list all your favorites in json format. `GET http://localhost:8080/fa
 
 ### Pick a single favorite
 
-You should get a single movies `GET http://localhost:8080/favorite/ID_OF_MOVIE`
+You should get a single movie `GET http://localhost:8080/favorite/ID_OF_MOVIE`
 
 ### Remove a single favorite
 
